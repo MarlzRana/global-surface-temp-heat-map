@@ -1,0 +1,58 @@
+/*Color palette
+https://coolors.co/a85c4c-a08068-bc9471-566246-4a4a48-d9fff8
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #a85c4c;
+}
+
+#heatmap.graph-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background-color: #d9fff8;
+}
+#heatmap.graph-container > .graph-title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#heatmap.graph-container > .graph {
+  margin-top: 25px;
+  width: 1000px;
+  aspect-ratio: 16/10;
+}
+#heatmap.graph-container > .graph-legend {
+  width: 500px;
+  aspect-ratio: 7/1;
+}
+#heatmap.graph-container > #tooltip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 5px;
+  background-color: #d9fff8;
+  border: 2px solid #bc9471;
+  border-radius: 5px;
+  pointer-events: none;
+}
+#heatmap.graph-container > #tooltip > p {
+  font-size: 12px;
+}
